@@ -54,7 +54,7 @@ if uploaded_file is not None:
     tfile.write(uploaded_file.read())
 
     stride_count, stride_length, duration = process_video(tfile.name)
-    st.success("✅ Processing complete!")
+    st.success("Processing complete!")
 
     st.write(f"**Stride Count:** {stride_count}")
     st.write(f"**Normalized Stride Length (unitless):** {stride_length:.4f}")
